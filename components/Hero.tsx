@@ -1,0 +1,27 @@
+import React from "react";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
+import BackgroundCircles from "./BackgroundCircles";
+type Props = {};
+
+const Hero = (props: Props) => {
+  const [text, setText] = useTypewriter({
+    words: [
+      "Hi , This is Sai Mukesh Reddy Vancha",
+      "Guy-who-loves-food.jsx",
+      "<ButInLoveWithCoding />",
+    ],
+    loop: true,
+    delaySpeed: 2000,
+  });
+  return (
+    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+        <BackgroundCircles/>
+      <h1>
+        <span>{text}</span>
+        <Cursor cursorColor="#F7AB0A"></Cursor>
+      </h1>
+    </div>
+  );
+};
+
+export default Hero;
