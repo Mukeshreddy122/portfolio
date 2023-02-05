@@ -1,5 +1,6 @@
 "use client";
 import { Inter } from '@next/font/google'
+import About from '../../components/About'
 import Header from 'components/Header'
 import Hero from 'components/Hero';
 
@@ -17,6 +18,13 @@ export default function Home() {
 
       </section>
       {/* about */}
+       {/* about */}
+       <section id="about">
+        <About/>
+      </section>
+      {/* experience */}
+      {/* skills */}
+      {/* projects */}
       {/* experience */}
       {/* skills */}
       {/* projeects */}
